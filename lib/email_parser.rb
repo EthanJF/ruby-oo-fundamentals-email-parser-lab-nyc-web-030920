@@ -14,6 +14,6 @@ class EmailAddressParser
   def parse
    split_email = @email_addresses.split(" ")\
    split_email.map do |email|
-     email.gsub!("," "")
+     email.gsub("," "")
    end
 end
