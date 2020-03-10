@@ -5,14 +5,14 @@
 
 class EmailAddressParser
   
-  attr_accessor :email
+  attr_accessor :email_addresses
   
-  def initialize(email)
-    @email = email
+  def initialize(email_addresses)
+    @email_addresses = email_addresses
   end
   
   def parse
-   if @email.includes?(" ") && @email.includes?(",")
-     @email.
-  end
+   split_email = @email_addresses.split(" ")\
+   split_email.map do |email|
+     email.include?(",")
 end
